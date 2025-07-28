@@ -1,0 +1,29 @@
+ZettaProject/
+├── tpch-dbgen/                    //TPCH data generator repo
+│   ├── dbgen                      //Binary to generate data
+│   └── tables/                    //Generated .tbl files (customer.tbl, orders.tbl, etc.)
+│
+├── tpch-query5/                   //This GitHub repository
+│   ├── inc/
+│   │   └── query5.hpp
+│   ├── src/
+│   │   ├── main.cpp
+│   │   └── query5.cpp
+│   ├── build----------/tpch_query5.exe   //Generated after build (not tracked in Git)
+│   │
+│   ├── CMakeLists.txt
+│   
+│   
+│
+├──Folder_Structure
+│
+│
+│
+├──Results─ ├──Single_thread---├──singlethreadscreenshot_runtime.jpg     //Query output file (created at runtime)
+│            │                   ├──results1.txt
+│            │ 
+│            ├──Multi-thread---├──resultmultithread_screenshot_runtime.jpg
+│                               ├──results4.txt
+│            
+
+                   
