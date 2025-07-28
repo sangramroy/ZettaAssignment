@@ -1,12 +1,14 @@
+
+---
+
 # TPC-H Query 5 in C++ (Single-threaded & Multi-threaded)
 
 This project implements **TPC-H Query 5** in C++ with optional multithreading support for performance comparison.
 
 It reads the input data generated using the [TPC-H dbgen tool](https://github.com/electrum/tpch-dbgen), executes the query logic, and writes the aggregated results to a specified output file.
 
-------------------------------------
 Dataset is generated using SF 2
-------------------------------------
+---
 
 ## 📁 Project Structure
 
@@ -37,10 +39,11 @@ ZettaProject/
 
 ---
 
-## Build Instructions
+## ⚙️ Build Instructions
 
 Make sure CMake and a C++ compiler (with C++11 or higher support) are installed.
 
+```bash
 # Navigate to the source directory
 cd tpch-query5
 
@@ -54,7 +57,7 @@ cmake --build .
 After build, you'll find the executable at:
 `tpch-query5/build/tpch_query5.exe`
 
-
+---
 
 ## 🚀 How to Run
 
@@ -82,5 +85,20 @@ After build, you'll find the executable at:
   --result_path /c/Users/Admin/Desktop/Whitefield/ZettaAssignment/ZettaProject/Results/Multi_Thread/results4.txt
 ```
 
+---
+
+## 📝 Notes
+
+* Ensure the `.tbl` files are generated using `dbgen` and are present in the correct `table_path`.
+* The tool supports multithreading for faster execution on larger datasets. You can control thread count using the `--threads` flag.
+* Output will be saved to the file specified via `--result_path`. Make sure the parent directory exists.
+
+---
+
+## 📷 Screenshots
+
+> 📌 Runtime results are also visualized with execution screenshots in the `Results/` directory.
+
+---
 
 
